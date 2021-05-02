@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]   normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+1em = 16px
+*/
+.left {
+  background: #000099;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .left__logo {
+    width: 17.5rem;
+    height: 12rem;
+    background: url(../img/sun_cloud-rain.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 10rem auto 7rem;
+    z-index: 1000; }
+  .left__heading {
+    text-align: center;
+    margin: -15rem auto 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .left__input {
+    padding: 0.8rem;
+    margin: 0 auto;
+    border-radius: 0.5rem; }
+  .left__warning {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #FFFFFF; }
+  .left__button {
+    padding: 0.8rem 1.6rem;
+    margin: 2rem auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #000099;
+    color: #FFFFFF;
+    letter-spacing: 0.1rem; }
+  .left button:hover {
+    color: #000099;
+    background-color: #FFFFFF; }
+  @media only screen and (max-width: 37.5em) {
+    .left {
+      height: 30vh; }
+      .left__logo {
+        width: 8rem;
+        height: 4rem;
+        background-size: 0;
+        margin: 12rem auto 0; } }
+
+.main {
+  background: #0033cc;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4rem 0;
+  color: #FFFFFF;
+  text-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25); }
+  .main__city-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.6rem; }
+  .main__photo {
+    width: 17.5rem; }
+  .main__city-name {
+    font-size: 5.2rem;
+    line-height: 8.4rem;
+    margin: 0.8rem 0; }
+  .main__weather {
+    align-self: center;
+    font-size: 1.4rem; }
+  .main__temperature {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem; }
+  .main__temp {
+    font-size: 3.8rem;
+    line-height: 6.7rem;
+    margin-right: 1rem; }
+  .main__temp-mini-max {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .main__temp-align {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem; }
+  .main__temp-description {
+    margin-right: 0.6rem; }
+  .main__weather-info {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    justify-content: space-between; }
+  .main__pressure-info, .main__humidity-info, .main__wind-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+    padding: 0 0.8rem;
+    border-right: 0.1rem solid #FFFFFF; }
+  .main__pressure-info {
+    border-left: 0.1rem solid #FFFFFF; }
+  @media only screen and (max-width: 37.5em) {
+    .main {
+      height: 70vh;
+      padding: 1.5rem 0; } }
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 1rem;
+  overflow-Y: hidden;
+  display: grid;
+  grid-template-columns: 1fr 2fr; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      display: flex;
+      flex-direction: column; } }
