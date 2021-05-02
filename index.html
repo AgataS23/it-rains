@@ -24,7 +24,50 @@
 </head>
 
 <body>
-
+    <aside class="left">
+        <div class="left__logo">
+            <h1 class="left__heading">It rains?</h1>
+        </div>
+        <input type="text" class="left__input" placeholder="Enter the city name..." aria-label="Enter the city name">
+        <p class="left__warning left__warning--js"></p>
+        <button class="left__button">Send</button>
+    </aside>
+    <main class="main">
+        <div class="main__city-description">
+            <img src="../assets/img/sun_cloud-rain.png" alt="A picture showing the weather."
+                class="main__photo main__photo--js">
+            <h1 class="main__city-name main__city-name--js">London</h1>
+            <p class="main__weather main__weather--js"></p>
+        </div>
+        <div class="main__temperature">
+            <h2 class="main__temp main__temp--js"></h2>
+            <div class="main__temp-mini-max">
+                <div class="main__temp-align">
+                    <p class="main__temp-description">temp. mini</p>
+                    <p class="main__temp-mini main__temp-mini--js"></p>
+                </div>
+                <div class="main__temp-align">
+                    <p class="main__temp-description">temp. max</p>
+                    <p class="main__temp-max main__temp-max--js"></p>
+                </div>
+            </div>
+        </div>
+        <div class="main__weather-info">
+            <div class="main__pressure-info">
+                <p class="main__pressure-paragraph">pressure</p>
+                <p class="main__pressure main__pressure--js"></p>
+            </div>
+            <div class="main__humidity-info">
+                <p class="main__humidity-paragraph">humidity</p>
+                <p class="main__humidity main__humidity--js"></p>
+            </div>
+            <div class="main__wind-info">
+                <p class="main__wind-paragraph">wind</p>
+                <p class="main__wind main__wind--js"></p>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 </body>
 
