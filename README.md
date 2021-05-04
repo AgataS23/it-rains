@@ -1,3 +1,5 @@
+![cover](https://agatas23.github.io/it-rains/cover.png)
+
 # AGATA STOCH - JUNIOR FRONTEND DEVELOPER
 
 My simple weather application.
