@@ -1,5 +1,3 @@
-![cover](https://agatas23.github.io/it-rains/cover.png)
-
 # AGATA STOCH - JUNIOR FRONTEND DEVELOPER
 
 My simple weather application.
@@ -12,10 +10,6 @@ My simple weather application.
 - CSS Flexbox
 - API-wearher
 
-## Available scripts
+## Available script
 
 `npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
