@@ -36,7 +36,8 @@ $breakpoint arguement choices:
   .left__input {
     padding: 0.8rem;
     margin: 0 auto;
-    border-radius: 0.5rem; }
+    border-radius: 0.5rem;
+    font-size: 1.4rem; }
   .left__warning {
     margin-top: 1rem;
     font-size: 1.4rem;
